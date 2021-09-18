@@ -14,7 +14,7 @@
         <b>商品詳細: {{ $item->description }}</b>
     </p>
     <p>
-        <b>価格: {{ $item->price }}</b>
+        <b>価格: {{ $item->price }}円</b>
     </p>
     <p>
         <b>出品者: {{ $item->seller }}</b>
@@ -25,5 +25,7 @@
     <p>
         <img src="{{ $item->image_url }}" alt="">
     </p>
+
+    <a href="/items/{{ $item->id }}/edit">編集する</a>
 </body>
 </html>
